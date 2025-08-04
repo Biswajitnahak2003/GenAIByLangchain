@@ -8,6 +8,7 @@ learning_genai_by_langchain/
 ├── langchain_models/                            # Base venv + general LangChain model testing
 
 │   ├── chatmodels/                              # Chat model examples (OpenAI, Gemini, HuggingFace, etc.)
+
 │   └── embeddingmodels/                         # Embedding model examples (OpenAI, Gemini, HuggingFace, etc.)
 
 ├── langchain_prompts/                           # Prompt engineering and chatbot demos
