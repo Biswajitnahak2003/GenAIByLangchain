@@ -1,0 +1,21 @@
+# Ignore virtual environment
+langchain-env/
+
+# Ignore environment variables
+.env
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# VS Code settings
+.vscode/
+
+# Jupyter Notebook checkpoints
+*.ipynb_checkpoints
+
+# Windows system files
+.DS_Store
+Thumbs.db

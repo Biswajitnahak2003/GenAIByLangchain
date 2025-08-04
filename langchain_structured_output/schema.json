@@ -1,0 +1,23 @@
+{
+  "title": "UserProfile",
+  "description": "A model to hold structured information about a user.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "Name",
+      "description": "The user's full name.",
+      "type": "string"
+    },
+    "email": {
+      "title": "Email",
+      "description": "The user's email address.",
+      "type": "string"
+    },
+    "is_premium_member": {
+      "title": "Is Premium Member",
+      "description": "Indicates if the user has a premium membership.",
+      "type": "boolean"
+    }
+  },
+  "required": ["name", "email", "is_premium_member"]
+}
