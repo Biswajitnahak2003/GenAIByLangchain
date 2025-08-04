@@ -12,24 +12,13 @@ learning_genai_by_langchain/
 
 ├── langchain_prompts/                           # Prompt engineering and chatbot demos
 
-│   ├── prompt_static.py                         # Static prompt example using basic PromptTemplate
-│   ├── prompt_dynamic.py                        # Dynamic prompt using variables and JSON template
-│   ├── chatbot_static.py                        # Simple static chatbot with LangChain
-│   ├── chat_prompt_templte.py                   # Custom ChatPromptTemplate class example
-│   ├── message_placeholder.py                   # MessagePlaceholder demo (chat formatting support)
-│   ├── prompt_generator.py                      # Generates prompts dynamically from template.json
-│   ├── chat_history.txt                         # Sample I/O from chatbot testing
-│   ├── template.json                            # JSON-based prompt structure used in dynamic prompt
-│   └── README.md                                 # Documentation for all prompt-related files
-
 ├── structured_output/                           # Structured output parsing demos
 
-│   ├── structured_openai_jsonschema.py          # Using OpenAI's native structured output (tool_choice / response_format)
-│   ├── structured_jsonparser.py                 # JSONOutputParser example for general models
-│   ├── structured_stringparser.py               # StringOutputParser for basic use-cases
-│   ├── structured_pydanticparser.py             # PydanticOutputParser to parse outputs into models
-│   ├── schema_definitions.py                    # Shared Pydantic models or JSON schema definitions
-│   └── README.md                                 # Full explanation of structured output strategies
+├── chains_in_langchain/                         # Types of chains with examples
+
+├── langchain_runnables/                         # Examples of mostly used runnables in langchain
+
+├── langchain_document_loader/                   # Different ways to load documents for RAGs
 
 ├── test.py                                      # General test file for quick experimentation
 
