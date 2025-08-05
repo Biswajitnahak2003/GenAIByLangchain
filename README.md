@@ -5,9 +5,9 @@ It contains code for working with prompts (static & dynamic), chat models, embed
 
 learning_genai_by_langchain/
 
-├── langchain_models/                            # Base venv + general LangChain model testing
+├── langchain_models/                            # General LangChain model testing
 
-│   ├── chatmodels/                              # Chat model examples (OpenAI, Gemini, HuggingFace, etc.)
+│   ├── chatmodels/                              # Chat model examples (ChatOpenAI, ChatGoogleGenerativeAI, HuggingFace, etc.)
 
 │   └── embeddingmodels/                         # Embedding model examples (OpenAI, Gemini, HuggingFace, etc.)
 
@@ -21,11 +21,13 @@ learning_genai_by_langchain/
 
 ├── langchain_document_loader/                   # Different ways to load documents for RAGs
 
+├── langchain_text_splitters/                    # Text splitting ways available in langchain
+
 ├── test.py                                      # General test file for quick experimentation
 
 ├── .env                                         # API keys for OpenAI, Gemini, etc. (not committed)
 
-├── .gitignore                                   # Git ignore file for venv, .env, etc.
+├── .gitignore                                   # Git ignore file for venv, .pkl etc.
 
 ├── requirements.txt                             # All required Python packages
 
