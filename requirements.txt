@@ -2,6 +2,7 @@
 langchain
 langchain-core
 langchain-community
+langchain-experimental
 
 # OpenAI Integration
 # langchain-openai
@@ -38,6 +39,11 @@ pydantic
 # for visualizing chains
 grandalf
 
-
 # for password protected PDF files
 cryptography
+
+# for vector datastore
+langchain-vectorstores
+faiss-cpu
+langchain-chroma
+langchain-pinecone
