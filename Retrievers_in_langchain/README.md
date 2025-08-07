@@ -90,9 +90,8 @@ compression_retriever = ContextualCompressionRetriever(
 compression_retriever.invoke("What year was the first iPhone released?")
  ```
 # 📌 References
-
-    - [📚 LangChain Docs](https://docs.langchain.com/)
-    - [🔍 Retrievers in LangChain](https://docs.langchain.com/docs/modules/data_connection/retrievers/)
+- [📚 LangChain Docs](https://docs.langchain.com/)
+- [🔍 Retrievers in LangChain](https://docs.langchain.com/docs/modules/data_connection/retrievers/)
 #  Author
 
     Biswajit Nahak
