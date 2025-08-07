@@ -21,11 +21,11 @@ Based on Retrieval Strategy
 
 Setup
 
-    Install Libraries:
+  Install Libraries:
 
     pip install langchain-google-genai langchain-community faiss-cpu wikipedia langchain-cohere
 
-    API Keys: Ensure your GOOGLE_API_KEY and COHERE_API_KEY are set up in your environment (e.g., in a .env file or Colab Secrets).
+  API Keys: Ensure your GOOGLE_API_KEY is set in your environment (e.g., in a .env file or Colab Secrets).
 
 Retrievers Based on Data Source
 🌎 Vector Store Retriever
@@ -93,12 +93,5 @@ compression_retriever.invoke("What year was the first iPhone released?")
 
 Author
 
-    Biswajit Nahak
+    Biswajit Nahak |B.Tech,ETC |IIIT Bhubaneswar
 
-    B.Tech,ETC
-
-    IIIT Bhubaneswar
-
-License
-
-This project is licensed under the MIT License.
