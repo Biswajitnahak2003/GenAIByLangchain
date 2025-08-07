@@ -12,11 +12,9 @@ Chains allow us to connect multiple components together, where the output of one
 
 ## 🧭 Table of Contents
 
-- [⛓️ Sequential Chains](#sequential-chains)
-- [🧵 Parallel Chains](#parallel-chains)
-- [🔀 Conditional (Branch) Chains](#conditional-branch-chains)
-- [📚 LangChain Docs](https://docs.langchain.com/)
-- [👨‍💻 Author](https://github.com/Biswajitnahak2003)
+- ⛓️ Sequential Chains
+- 🧵 Parallel Chains
+- 🔀 Conditional Chain(Branch)
 
 ---
 
@@ -24,7 +22,7 @@ Chains allow us to connect multiple components together, where the output of one
 
 A sequential chain executes a series of steps in a specific order. This is the most common type of chain, perfect for workflows like generating text and then summarizing it. The modern way to create them is with the pipe (`|`) operator.
 
-#### ✅ Example
+### ✅ Example
 
 ```python
 from langchain_core.prompts import ChatPromptTemplate
@@ -78,7 +76,8 @@ branch = RunnableBranch(
 ```
 # 📘 Reference
 
-LangChain Documentation
+- [📚 LangChain Docs](https://docs.langchain.com/)
 
 # 🙋 Author
+
 Biswajit Nahak | BTech ETC | @IIIT BBSR
