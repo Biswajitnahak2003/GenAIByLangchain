@@ -1,7 +1,3 @@
-# 🧠 LangChain Retriever Examples
-
-This directory contains examples of various retriever types in LangChain, which are essential for building effective Retrieval-Augmented Generation (RAG) systems.
-
 # 📌 What are Retrievers?
 
 Retrievers are a core component in LangChain that fetch relevant documents from a data source in response to a user's query. This enables Large Language Models (LLMs) to generate accurate, grounded responses based on external knowledge, not just what they were trained on.
