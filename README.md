@@ -1,6 +1,6 @@
 # 🚀 Learning GenAI using LangChain
 
-This is my personal learning journey through GenAI tools and frameworks — primarily focused on LangChain, Google Gemini, and Hugging Face.  
+This is my personal learning journey through GenAI tools and frameworks — primarily focused on LangChain and Google Gemini.  
 It contains code for working with prompts (static & dynamic), chat models, embedding models, and more.
 
 learning_genai_by_langchain/
@@ -22,6 +22,10 @@ learning_genai_by_langchain/
 ├── langchain_document_loader/                   # Different ways to load documents for RAGs
 
 ├── langchain_text_splitters/                    # Text splitting ways available in langchain
+
+├── Vectorstores_in_langchain/                   # vectorstores(FAISS, Chroma etc.)
+
+├── Retrievers_in_langchain/                     # Retrievers(WikipediaRetriever, MMR etc.)
 
 ├── test.py                                      # General test file for quick experimentation
 
