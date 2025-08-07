@@ -5,18 +5,17 @@ This directory contains examples of various retriever types in LangChain, which 
 # 📌 What are Retrievers?
 
 Retrievers are a core component in LangChain that fetch relevant documents from a data source in response to a user's query. This enables Large Language Models (LLMs) to generate accurate, grounded responses based on external knowledge, not just what they were trained on.
+
 ## 📚 Table of Contents
-### ▶ Based on Data Source
+### 🔹 Based on Data Source
+- [📘 Vector Store Retriever](#vector-store-retriever)
+- [📗 Wikipedia Retriever](#wikipedia-retriever)
 
-    - [📘 Vector Store Retriever](#vector-store-retriever)
-    - [📗 Wikipedia Retriever](#wikipedia-retriever)
+### 🔹 Based on Retrieval Strategy
+- [✨ Maximum Marginal Relevance (MMR) Retriever](#maximum-marginal-relevance-mmr-retriever)
+- [❓ Multi-Query Retriever](#multi-query-retriever)
+- [🎯 Contextual Compression Retriever](#contextual-compression-retriever)
 
-
-### ▶ Based on Retrieval Strategy
-
-    - [✨ Maximum Marginal Relevance (MMR) Retriever](#maximum-marginal-relevance-mmr-retriever)
-    - [❓ Multi-Query Retriever](#multi-query-retriever)
-    - [🎯 Contextual Compression Retriever](#contextual-compression-retriever)
 
 ## ⚙️ Setup
 
