@@ -1,40 +1,39 @@
-🧠 LangChain Retriever Examples
+# 🧠 LangChain Retriever Examples
 
 This directory contains examples of various retriever types in LangChain, which are essential for building effective Retrieval-Augmented Generation (RAG) systems.
-📌 What are Retrievers?
+
+# 📌 What are Retrievers?
 
 Retrievers are a core component in LangChain that fetch relevant documents from a data source in response to a user's query. This enables Large Language Models (LLMs) to generate accurate, grounded responses based on external knowledge, not just what they were trained on.
-📚 Table of Contents
-▶ Based on Data Source
+## 📚 Table of Contents
+### ▶ Based on Data Source
 
-    🌎 Vector Store Retriever
+    - [📘 Vector Store Retriever](#vector-store-retriever)
+    - [📗 Wikipedia Retriever](#wikipedia-retriever)
 
-    📚 Wikipedia Retriever
 
-▶ Based on Retrieval Strategy
+### ▶ Based on Retrieval Strategy
 
-    ✨ Maximum Marginal Relevance (MMR) Retriever
+    - [✨ Maximum Marginal Relevance (MMR) Retriever](#maximum-marginal-relevance-mmr-retriever)
+    - [❓ Multi-Query Retriever](#multi-query-retriever)
+    - [🎯 Contextual Compression Retriever](#contextual-compression-retriever)
 
-    ❓ Multi-Query Retriever
+## ⚙️ Setup
 
-    🎯 Contextual Compression Retriever
-
-⚙️ Setup
-
-    Install Required Libraries:
-
+### Install Required Libraries:
+```python
     pip install langchain-google-genai langchain-community faiss-cpu wikipedia langchain-cohere
+```
+### Set API Keys:
 
-    Set API Keys:
+    Ensure GOOGLE_API_KEY is set in your environment, e.g., in a .env file or through Colab secrets.
 
-    Ensure GOOGLE_API_KEY and COHERE_API_KEY are set in your environment, e.g., in a .env file or through Colab secrets.
-
-🌎 Vector Store Retriever
+## 🌎 Vector Store Retriever
 
 The most common retriever. Performs a similarity search over a vectorized collection of your documents.
 
-Example:
-
+### Example:
+ ```
 from langchain_community.vectorstores import FAISS
 
 db = FAISS.from_texts(
@@ -43,44 +42,44 @@ db = FAISS.from_texts(
 )
 retriever = db.as_retriever()
 retriever.invoke("Which city is in France?")
-
-📚 Wikipedia Retriever
+ ```
+## 📚 Wikipedia Retriever
 
 Fetches documents directly from Wikipedia, acting as a real-time general-knowledge retriever.
 
-Example:
-
+### Example:
+ ```
 from langchain_community.retrievers import WikipediaRetriever
 
 retriever = WikipediaRetriever(top_k_results=1)
 retriever.invoke("Srinivasa Ramanujan")
-
-✨ Maximum Marginal Relevance (MMR) Retriever
+ ```
+## ✨ Maximum Marginal Relevance (MMR) Retriever
 
 Returns results that are both relevant and diverse, avoiding repetition in search results.
 
-Example:
-
+### Example:
+ ```
 retriever = db.as_retriever(search_type="mmr")
 retriever.invoke("Tell me about fruits.")
-
-❓ Multi-Query Retriever
+ ```
+## ❓ Multi-Query Retriever
 
 Uses an LLM to reformulate the query in multiple ways for better coverage and recall.
 
-Example:
-
+### Example:
+ ```
 from langchain.retrievers.multi_query import MultiQueryRetriever
 
 mq_retriever = MultiQueryRetriever.from_llm(retriever=retriever, llm=llm)
 mq_retriever.invoke("What is there to do in New York City?")
-
-🎯 Contextual Compression Retriever
+ ```
+## 🎯 Contextual Compression Retriever
 
 First retrieves documents, then filters them using a compressor (like rerankers) to keep only the most relevant snippets.
 
-Example:
-
+### Example:
+ ```
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain_cohere import CohereRerank
 
@@ -90,13 +89,12 @@ compression_retriever = ContextualCompressionRetriever(
     base_retriever=base_retriever
 )
 compression_retriever.invoke("What year was the first iPhone released?")
+ ```
+# 📌 References
 
-📌 References
+    - [📚 LangChain Docs](https://docs.langchain.com/)
+    - [🔍 Retrievers in LangChain](https://docs.langchain.com/docs/modules/data_connection/retrievers/)
+#  Author
 
-    LangChain Docs
-
-    Cohere API
-
-    Wikipedia API
-
-    Retrievers in LangChain
+    Biswajit Nahak
+    BTech | ETC | @IIIT BBSR
