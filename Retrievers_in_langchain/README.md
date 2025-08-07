@@ -8,13 +8,13 @@ Retrievers are a core component in LangChain that fetch relevant documents from 
 
 ## 📚 Table of Contents
 ### 🔹 Based on Data Source
-- [📘 Vector Store Retriever](#vector-store-retriever)
-- [📗 Wikipedia Retriever](#wikipedia-retriever)
+    🌎 Vector Store Retriever
+    📚 Wikipedia Retriever
 
 ### 🔹 Based on Retrieval Strategy
-- [✨ Maximum Marginal Relevance (MMR) Retriever](#maximum-marginal-relevance-mmr-retriever)
-- [❓ Multi-Query Retriever](#multi-query-retriever)
-- [🎯 Contextual Compression Retriever](#contextual-compression-retriever)
+    ✨ Maximum Marginal Relevance (MMR) Retriever
+    ❓ Multi-Query Retriever
+    🎯 Contextual Compression Retriever
 
 
 ## ⚙️ Setup
